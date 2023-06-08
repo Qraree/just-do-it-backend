@@ -4,6 +4,7 @@ services:
   frontend:
     container_name: jdi_frontend
     build: ../just_do_it
+    env_file: ../just_do_it/.env.development
     volumes:
       - ../just_do_it:/app
     ports:
